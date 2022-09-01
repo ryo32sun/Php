@@ -1,28 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>いちばんやさしいPHPの教本</title>
+    <title>入力フォーム</title>
   </head>
   <body>
-    <h1>いちばんやさしいPHPの教本 HTMLの確認</h1>
-    <p>段落を分けられます。</p>
-    <table border=1>
-      <tr>
-        <th>当日</th>
-        <th>前日</th>
-      </tr>
-      <tr>
-        <td>りんご</td>
-        <td>オレンジ</td>
-      </tr>
-      <tr>
-        <td>みかん</td>
-        <td>メロン</td>
-      </tr>
-    </table>
-    <a href="http://exaple.com">
-      ここをクリック
-    </a>
+    入力フォーム<br>
+    <form method="post" action="receive.php">
+      料理名:<input type="text" name="recipe_name" required>
+      <input type="submit" value="送信">
+    </form>
   </body>
 </html>
