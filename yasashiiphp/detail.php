@@ -1,7 +1,5 @@
 <?php
-
-  $user = "suzuki";
-  $pass = "3q.K$9EZvYH*Qm6";
+  require_once '\MAMP\db_config.php';
 try {
   if (empty($_GET['id'])) throw new Exception('ID不正');
   $id = (int) $_GET['id'];
@@ -23,5 +21,5 @@ try {
   echo "エラー発生: " . htmlspecialchars($e->getMessage(), ENT_QUOTES, 'UTF-8') . "<br>";
   die();
 }
-
+echo "<a href='index.php'>トップページへ戻る</a>";
 ?>
